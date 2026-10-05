@@ -57,7 +57,6 @@ for (let i = 0; i < particleCount; i++) {
 function animateParticles() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  // Connect particles with subtle neural lines
   for (let i = 0; i < particles.length; i++) {
     for (let j = i + 1; j < particles.length; j++) {
       const dx = particles[i].x - particles[j].x;
@@ -87,65 +86,28 @@ function animateParticles() {
 
 animateParticles();
 
-// --- Repo Category Filter Logic ---
-const filterButtons = document.querySelectorAll('.filter-btn');
-const repoBoxes = document.querySelectorAll('.repo-box');
-
-filterButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    filterButtons.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-
-    const filterVal = btn.getAttribute('data-filter');
-
-    repoBoxes.forEach(box => {
-      if (filterVal === 'all' || box.getAttribute('data-category') === filterVal) {
-        box.style.display = 'flex';
-      } else {
-        box.style.display = 'none';
-      }
-    });
+// --- Bilingual Language Switcher (TR / EN) ---
+function setLanguage(lang) {
+  const elements = document.querySelectorAll('[data-tr]');
+  
+  elements.forEach(el => {
+    if (lang === 'en' && el.getAttribute('data-en')) {
+      el.textContent = el.getAttribute('data-en');
+    } else if (lang === 'tr' && el.getAttribute('data-tr')) {
+      el.textContent = el.getAttribute('data-tr');
+    }
   });
-});
 
-// --- Dynamic Terminal Typewriter Effect ---
-const terminalPrompts = [
-  'fetch --profile alionur',
-  'system.getStats()',
-  'ue5.buildTarget --platform Win64',
-  'git commit -m "feat: next-gen mechanic deployed"'
-];
+  const btnTr = document.getElementById('btn-tr');
+  const btnEn = document.getElementById('btn-en');
 
-let promptIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-const promptElement = document.getElementById('interactive-prompt');
-
-function typeEffect() {
-  if (!promptElement) return;
-
-  const currentText = terminalPrompts[promptIndex];
-
-  if (isDeleting) {
-    promptElement.textContent = currentText.substring(0, charIndex - 1);
-    charIndex--;
-  } else {
-    promptElement.textContent = currentText.substring(0, charIndex + 1);
-    charIndex++;
+  if (btnTr && btnEn) {
+    if (lang === 'en') {
+      btnEn.classList.add('active');
+      btnTr.classList.remove('active');
+    } else {
+      btnTr.classList.add('active');
+      btnEn.classList.remove('active');
+    }
   }
-
-  let typingSpeed = isDeleting ? 40 : 80;
-
-  if (!isDeleting && charIndex === currentText.length) {
-    typingSpeed = 2000; // Bekleme süresi
-    isDeleting = true;
-  } else if (isDeleting && charIndex === 0) {
-    isDeleting = false;
-    promptIndex = (promptIndex + 1) % terminalPrompts.length;
-    typingSpeed = 400;
-  }
-
-  setTimeout(typeEffect, typingSpeed);
 }
-
-setTimeout(typeEffect, 1000);

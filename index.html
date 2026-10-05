@@ -24,10 +24,16 @@
       </div>
     </div>
     <nav class="nav-links">
-      <a href="#forma" class="nav-item active"><i class="fa-solid fa-gamepad"></i> UYGULAMA</a>
-      <a href="#privacy" class="nav-item"><i class="fa-solid fa-shield-halved"></i> GİZLİLİK & ŞARTLAR</a>
-      <a href="#contact" class="nav-item"><i class="fa-solid fa-envelope"></i> İLETİŞİM</a>
+      <a href="#forma" class="nav-item active"><i class="fa-solid fa-gamepad"></i> <span data-tr="UYGULAMA" data-en="APP">UYGULAMA</span></a>
+      <a href="#privacy" class="nav-item"><i class="fa-solid fa-shield-halved"></i> <span data-tr="GİZLİLİK & ŞARTLAR" data-en="PRIVACY & TERMS">GİZLİLİK & ŞARTLAR</span></a>
+      <a href="#contact" class="nav-item"><i class="fa-solid fa-envelope"></i> <span data-tr="İLETİŞİM" data-en="CONTACT">İLETİŞİM</span></a>
     </nav>
+
+    <!-- Language Selector Toggle -->
+    <div class="lang-switch-box" style="display: flex; gap: 0.4rem; align-items: center;">
+      <button class="cyber-btn cyber-btn-sm lang-btn active" id="btn-tr" onclick="setLanguage('tr')">TR</button>
+      <button class="cyber-btn cyber-btn-sm lang-btn" id="btn-en" onclick="setLanguage('en')">EN</button>
+    </div>
   </header>
 
   <!-- Hero / App Main Section -->
@@ -35,8 +41,8 @@
     <div class="hero-status">
       <span class="status-indicator"></span> MAYSOFT OFFICIAL APP PAGE
     </div>
-    <h1 class="hero-title" style="font-size: 2.8rem; margin-bottom: 0.8rem;">FORMA: BLOK BULMACA</h1>
-    <p class="hero-subtitle" style="margin-bottom: 2rem; max-width: 750px;">
+    <h1 class="hero-title" style="font-size: 2.8rem; margin-bottom: 0.8rem;" data-tr="FORMA: BLOK BULMACA" data-en="FORMA: BLOCK PUZZLE">FORMA: BLOK BULMACA</h1>
+    <p class="hero-subtitle" style="margin-bottom: 2rem; max-width: 750px;" data-tr="Forma, 8×8 tahtada oynanan bağımlılık yapıcı bir mobil blok bulmaca oyunudur. Stratejik hamleler yapın, satır ve sütunları temizleyip rekorunuzu kırın." data-en="Forma is an addictive mobile block puzzle game played on an 8×8 board. Make strategic moves, clear rows and columns to beat your high score.">
       Forma, 8×8 tahtada oynanan bağımlılık yapıcı bir mobil blok bulmaca oyunudur. Stratejik hamleler yapın, satır ve sütunları temizleyip rekorunuzu kırın.
     </p>
 
@@ -50,24 +56,24 @@
       <div class="game-card">
         <div class="game-banner" style="background-image: url('images/01-home.png'); background-size: cover; background-position: center; height: 180px;"></div>
         <div class="game-details" style="padding: 1rem;">
-          <h3 class="game-name" style="font-size: 1.1rem;">ŞIK ARABİRİM</h3>
-          <p class="game-desc" style="font-size: 0.85rem;">Modern tasarım ve renkli bloklar.</p>
+          <h3 class="game-name" style="font-size: 1.1rem;" data-tr="ŞIK ARABİRİM" data-en="SLEEK INTERFACE">ŞIK ARABİRİM</h3>
+          <p class="game-desc" style="font-size: 0.85rem;" data-tr="Modern tasarım ve renkli bloklar." data-en="Modern design and colorful blocks.">Modern tasarım ve renkli bloklar.</p>
         </div>
       </div>
 
       <div class="game-card">
         <div class="game-banner" style="background-image: url('images/02-classic.png'); background-size: cover; background-position: center; height: 180px;"></div>
         <div class="game-details" style="padding: 1rem;">
-          <h3 class="game-name" style="font-size: 1.1rem;">8×8 BULMACA TAHTASI</h3>
-          <p class="game-desc" style="font-size: 0.85rem;">Stratejik hamleler ve kombo puanları.</p>
+          <h3 class="game-name" style="font-size: 1.1rem;" data-tr="8×8 BULMACA TAHTASI" data-en="8×8 PUZZLE BOARD">8×8 BULMACA TAHTASI</h3>
+          <p class="game-desc" style="font-size: 0.85rem;" data-tr="Stratejik hamleler ve kombo puanları." data-en="Strategic moves and combo scores.">Stratejik hamleler ve kombo puanları.</p>
         </div>
       </div>
 
       <div class="game-card">
         <div class="game-banner" style="background-image: url('images/03-modes.png'); background-size: cover; background-position: center; height: 180px;"></div>
         <div class="game-details" style="padding: 1rem;">
-          <h3 class="game-name" style="font-size: 1.1rem;">GÜÇLENDİRİCİLER</h3>
-          <p class="game-desc" style="font-size: 0.85rem;">Çekiç, Bomba ve Parça Yenileme.</p>
+          <h3 class="game-name" style="font-size: 1.1rem;" data-tr="GÜÇLENDİRİCİLER" data-en="POWER-UPS">GÜÇLENDİRİCİLER</h3>
+          <p class="game-desc" style="font-size: 0.85rem;" data-tr="Çekiç, Bomba ve Parça Yenileme." data-en="Hammer, Bomb and Refresh power-ups.">Çekiç, Bomba ve Parça Yenileme.</p>
         </div>
       </div>
     </div>
@@ -76,15 +82,15 @@
   <!-- Legal & Policies Section -->
   <section id="privacy" class="section-container" style="padding: 3rem 2rem;">
     <div class="section-header">
-      <div class="section-subtitle">// YASAL BAĞLANTILAR</div>
-      <h2 class="section-title">GİZLİLİK VE POLİTİKALAR</h2>
+      <div class="section-subtitle" data-tr="// YASAL BAĞLANTILAR" data-en="// LEGAL LINKS">// YASAL BAĞLANTILAR</div>
+      <h2 class="section-title" data-tr="GİZLİLİK VE POLİTİKALAR" data-en="PRIVACY & POLICIES">GİZLİLİK VE POLİTİKALAR</h2>
     </div>
     <div style="background: var(--bg-card); border: 1px solid var(--border-neon); padding: 1.5rem; border-radius: 6px; display: flex; gap: 1.5rem; flex-wrap: wrap;">
       <a href="https://aydemircan35.github.io/game-policies/privacy-policy.html" target="_blank" class="cyber-btn cyber-btn-primary" style="flex: 1; text-align: center; justify-content: center;">
-        <i class="fa-solid fa-shield-halved"></i> Gizlilik Politikası (Privacy Policy)
+        <i class="fa-solid fa-shield-halved"></i> Privacy Policy (Gizlilik Politikası)
       </a>
       <a href="https://aydemircan35.github.io/game-policies/dmca-terms.html" target="_blank" class="cyber-btn cyber-btn-secondary" style="flex: 1; text-align: center; justify-content: center;">
-        <i class="fa-solid fa-file-contract"></i> Hizmet Şartları (Terms of Service)
+        <i class="fa-solid fa-file-contract"></i> Terms of Service (Hizmet Şartları)
       </a>
     </div>
   </section>
@@ -94,10 +100,10 @@
     <div class="footer-content">
       <div class="footer-left">
         <div class="footer-brand">MAYSOFT</div>
-        <p>© 2026 MAYSOFT. Tüm hakları saklıdır.</p>
+        <p>© 2026 MAYSOFT. <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Tüm hakları saklıdır.</span></p>
       </div>
       <div class="footer-links">
-        <a href="mailto:maysoft.support@gmail.com"><i class="fa-solid fa-envelope"></i> Geliştirici İletişim: maysoft.support@gmail.com</a>
+        <a href="mailto:maysoft.support@gmail.com"><i class="fa-solid fa-envelope"></i> <span data-tr="Geliştirici İletişim" data-en="Developer Contact">Geliştirici İletişim</span>: maysoft.support@gmail.com</a>
       </div>
     </div>
   </footer>
