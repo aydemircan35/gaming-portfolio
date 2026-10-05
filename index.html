@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALİ ONUR // GAME STUDIO & DEV PORTFOLIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <div class="vignette"></div>
+
+  <!-- Interactive Canvas Background -->
+  <canvas id="cyber-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="studio-header">
+    <div class="logo-area">
+      <div class="cyber-glitch-badge">AO</div>
+      <div class="studio-name">
+        <span class="studio-title">ALI ONUR</span>
+        <span class="studio-tag">INTERACTIVE / STUDIOS</span>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#games" class="nav-item active"><i class="fa-solid fa-gamepad"></i> OYUNLAR</a>
+      <a href="#github-repos" class="nav-item"><i class="fa-brands fa-github"></i> REPOLAR</a>
+      <a href="#tech-stack" class="nav-item"><i class="fa-solid fa-microchip"></i> TEKNOLOJİLER</a>
+      <a href="#studio-about" class="nav-item"><i class="fa-solid fa-terminal"></i> HAKKIMDA</a>
+    </nav>
+    <div class="header-actions">
+      <a href="https://github.com" target="_blank" id="gh-profile-btn" class="cyber-btn cyber-btn-sm">
+        <span>GITHUB PROFILI</span>
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-status">
+      <span class="status-indicator"></span> SISTEM ONLINE // STUDIO PROTOCOL V3.8
+    </div>
+    <h1 class="hero-title glitch" data-text="NEXT-GEN GAMES & EXPERIENCES">NEXT-GEN GAMES & EXPERIENCES</h1>
+    <p class="hero-subtitle">
+      Yeni nesil mekanikler, modern grafikler ve sürükleyici atmosferler. Bağımsız oyun projeleri ve açık kaynaklı yazılım arşivi.
+    </p>
+
+    <!-- Quick Stats HUD -->
+    <div class="hud-stats">
+      <div class="hud-card">
+        <div class="hud-val" id="repo-count-val">12+</div>
+        <div class="hud-lbl">PROJE & REPO</div>
+      </div>
+      <div class="hud-card">
+        <div class="hud-val">UE5 & UNITY</div>
+        <div class="hud-lbl">ANA MOTORLAR</div>
+      </div>
+      <div class="hud-card">
+        <div class="hud-val">100%</div>
+        <div class="hud-lbl">AÇIK KAYNAK RUHU</div>
+      </div>
+      <div class="hud-card">
+        <div class="hud-val"><span class="badge-pulse">●</span> ONLINE</div>
+        <div class="hud-lbl">İŞ BİRLİKLERİ</div>
+      </div>
+    </div>
+
+    <div class="hero-cta-group">
+      <a href="#games" class="cyber-btn cyber-btn-primary">
+        <span>PROJELERİ İNCELE</span>
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+      <a href="#github-repos" class="cyber-btn cyber-btn-secondary">
+        <span>KAYNAK KODLAR</span>
+        <i class="fa-solid fa-code"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Featured Games Showcase -->
+  <section id="games" class="section-container">
+    <div class="section-header">
+      <div class="section-subtitle">// PORTFOLIO RELEASE SHOWCASE</div>
+      <h2 class="section-title">SEÇİLEN OYUN VE PROJELER</h2>
+    </div>
+
+    <div class="games-grid">
+      <!-- Game Card 1 -->
+      <div class="game-card">
+        <div class="game-banner banner-neon-cyber">
+          <div class="badge-tag">CYBERPUNK / ACTION</div>
+          <div class="engine-badge"><i class="fa-solid fa-cube"></i> UE5</div>
+        </div>
+        <div class="game-details">
+          <h3 class="game-name">NEON SYNDICATE: PROTOCOL</h3>
+          <p class="game-desc">
+            Karanlık ve sibernetik bir gelecekte geçen hızlı tempolu aksiyon & parkur mekanikleri. Gerçek zamanlı ışın izleme (Lumen) ve dinamik yapay zeka düşman davranışı.
+          </p>
+          <div class="game-tags">
+            <span>C++</span>
+            <span>Unreal Engine 5</span>
+            <span>Lumen</span>
+            <span>Chaos Physics</span>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn-card"><i class="fa-brands fa-github"></i> Kodu Gör</a>
+            <a href="#" class="btn-card primary-action"><i class="fa-solid fa-play"></i> Oynanış / Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Card 2 -->
+      <div class="game-card">
+        <div class="game-banner banner-retro-rogue">
+          <div class="badge-tag">ROGUE-LITE / SOULSLIKE</div>
+          <div class="engine-badge"><i class="fa-brands fa-unity"></i> UNITY</div>
+        </div>
+        <div class="game-details">
+          <h3 class="game-name">SHADOW VEIL CHRONICLES</h3>
+          <p class="game-desc">
+            Prosedürel zindan üretimi ve zorlayıcı savaş mekanikleri içeren izometrik rogue-lite. Özel shader optimizasyonları ve optimize edilmiş durum makineleri.
+          </p>
+          <div class="game-tags">
+            <span>C#</span>
+            <span>Unity URP</span>
+            <span>Procedural Gen</span>
+            <span>Custom Shaders</span>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn-card"><i class="fa-brands fa-github"></i> Kodu Gör</a>
+            <a href="#" class="btn-card primary-action"><i class="fa-solid fa-play"></i> Oynanış / Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Card 3 -->
+      <div class="game-card">
+        <div class="game-banner banner-space-sim">
+          <div class="badge-tag">SCI-FI / SIMULATION</div>
+          <div class="engine-badge"><i class="fa-solid fa-gamepad"></i> GODOT / C++</div>
+        </div>
+        <div class="game-details">
+          <h3 class="game-name">AETHERIA: DEEP ODYSSEY</h3>
+          <p class="game-desc">
+            Newtonyen fizik dinamiklerine dayalı uzay keşif ve kaynak yönetimi oyunu. Düşük gecikmeli multiplayer ağ mimarisi (UDP / Client-Side Prediction).
+          </p>
+          <div class="game-tags">
+            <span>Godot 4</span>
+            <span>C++ GDExtension</span>
+            <span>Netcode</span>
+            <span>Physics</span>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn-card"><i class="fa-brands fa-github"></i> Kodu Gör</a>
+            <a href="#" class="btn-card primary-action"><i class="fa-solid fa-play"></i> Oynanış / Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live GitHub Repositories Section -->
+  <section id="github-repos" class="section-container">
+    <div class="section-header">
+      <div class="section-subtitle">// LIVE SOURCE CODE ARCHIVE</div>
+      <h2 class="section-title">GITHUB REPOLARI & ARAÇLAR</h2>
+      <p class="section-intro">
+        GitHub API'si üzerinden dinamik olarak repo verilerini çekebilen veya doğrudan filtreleyebileceğiniz oyun motoru araçları, kütüphaneler ve deneysel kodlar.
+      </p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">TÜMÜ</button>
+      <button class="filter-btn" data-filter="engine">MOTOR & EKLENTİ</button>
+      <button class="filter-btn" data-filter="gameplay">GAMEPLAY & AI</button>
+      <button class="filter-btn" data-filter="tools">ARAÇLAR & SHADER</button>
+    </div>
+
+    <div class="repos-grid" id="repos-container">
+      <!-- Repo 1 -->
+      <div class="repo-box" data-category="engine">
+        <div class="repo-top">
+          <div class="repo-folder"><i class="fa-solid fa-folder-closed"></i></div>
+          <div class="repo-stats">
+            <span><i class="fa-solid fa-star"></i> 48</span>
+            <span><i class="fa-solid fa-code-fork"></i> 12</span>
+          </div>
+        </div>
+        <h4 class="repo-title">spatial-audio-occlusion-ue5</h4>
+        <p class="repo-desc">
+          Unreal Engine 5 için fiziksel materyallere duyarlı dinamik ses engelleme ve yankı simülasyonu sağlayan C++ eklentisi.
+        </p>
+        <div class="repo-meta">
+          <span class="lang-dot cpp"></span> C++
+          <span class="license">MIT</span>
+        </div>
+      </div>
+
+      <!-- Repo 2 -->
+      <div class="repo-box" data-category="gameplay">
+        <div class="repo-top">
+          <div class="repo-folder"><i class="fa-solid fa-folder-closed"></i></div>
+          <div class="repo-stats">
+            <span><i class="fa-solid fa-star"></i> 89</span>
+            <span><i class="fa-solid fa-code-fork"></i> 27</span>
+          </div>
+        </div>
+        <h4 class="repo-title">utility-ai-behavior-core</h4>
+        <p class="repo-desc">
+          Unity ve Godot için modüler Utility Theory tabanlı NPC yapay zeka karar verme mimarisi. Karar eğrileri ve hedef önceliklendirme.
+        </p>
+        <div class="repo-meta">
+          <span class="lang-dot csharp"></span> C#
+          <span class="license">MIT</span>
+        </div>
+      </div>
+
+      <!-- Repo 3 -->
+      <div class="repo-box" data-category="tools">
+        <div class="repo-top">
+          <div class="repo-folder"><i class="fa-solid fa-folder-closed"></i></div>
+          <div class="repo-stats">
+            <span><i class="fa-solid fa-star"></i> 34</span>
+            <span><i class="fa-solid fa-code-fork"></i> 8</span>
+          </div>
+        </div>
+        <h4 class="repo-title">volumetric-fog-hlsl</h4>
+        <p class="repo-desc">
+          Modern render pipeline'lar için raymarching destekli hacimsel sis ve ışık huzmesi HLSL shader kütüphanesi.
+        </p>
+        <div class="repo-meta">
+          <span class="lang-dot shader"></span> HLSL / ShaderLab
+          <span class="license">Apache-2.0</span>
+        </div>
+      </div>
+
+      <!-- Repo 4 -->
+      <div class="repo-box" data-category="engine">
+        <div class="repo-top">
+          <div class="repo-folder"><i class="fa-solid fa-folder-closed"></i></div>
+          <div class="repo-stats">
+            <span><i class="fa-solid fa-star"></i> 112</span>
+            <span><i class="fa-solid fa-code-fork"></i> 35</span>
+          </div>
+        </div>
+        <h4 class="repo-title">fast-rollback-netcode</h4>
+        <p class="repo-desc">
+          Dövüş ve hızlı aksiyon oyunları için deterministik lockstep ve rollback netcode kütüphanesi.
+        </p>
+        <div class="repo-meta">
+          <span class="lang-dot rust"></span> Rust / C++
+          <span class="license">MIT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack HUD Section -->
+  <section id="tech-stack" class="section-container">
+    <div class="section-header">
+      <div class="section-subtitle">// ARSENAL & TOOLKIT</div>
+      <h2 class="section-title">TEKNOLOJİ VE MOTOR YETKİNLİKLERİ</h2>
+    </div>
+
+    <div class="tech-grid">
+      <div class="tech-card">
+        <div class="tech-icon"><i class="fa-solid fa-cube"></i></div>
+        <h3>Oyun Motorları</h3>
+        <ul>
+          <li>Unreal Engine 5 (C++, Blueprints, Lumen, Nanite)</li>
+          <li>Unity (C#, URP, HDRP, Compute Shaders)</li>
+          <li>Godot Engine 4 (GDScript, GDExtension)</li>
+        </ul>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Yazılım Dilleri</h3>
+        <ul>
+          <li>C++ (Modern C++17/20, STL, Bellek Yönetimi)</li>
+          <li>C# (.NET, LINQ, Async/Await)</li>
+          <li>HLSL / GLSL (Shader Geliştirme)</li>
+          <li>Python (Pipeline & Otomasyon Araçları)</li>
+        </ul>
+      </div>
+
+      <div class="tech-card">
+        <div class="tech-icon"><i class="fa-solid fa-network-wired"></i></div>
+        <h3>Mimari & Sistemler</h3>
+        <ul>
+          <li>Multiplayer / Rollback Netcode</li>
+          <li>Procedural Generation & Voxel Sistemleri</li>
+          <li>Yapay Zeka (Behavior Tree, Utility AI, GOAP)</li>
+          <li>Performans Optimizasyonu & Profiling</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Terminal / About Section -->
+  <section id="studio-about" class="section-container">
+    <div class="section-header">
+      <div class="section-subtitle">// DEVELOPER DOSSIER</div>
+      <h2 class="section-title">GELİŞTİRİCİ KONSOLU & HAKKIMDA</h2>
+    </div>
+
+    <div class="terminal-window">
+      <div class="terminal-bar">
+        <div class="terminal-dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="terminal-title">ao-dev-console --bash</div>
+      </div>
+      <div class="terminal-body" id="terminal-content">
+        <div class="line"><span class="prompt">guest@ao-studio:~$</span> whoami</div>
+        <div class="line output">Ali Onur - Oyun Geliştiricisi & Grafik Programcısı</div>
+        <div class="line"><span class="prompt">guest@ao-studio:~$</span> cat mission_statement.txt</div>
+        <div class="line output">"Teknik mükemmeliyet ile sanatsal atmosferi birleştirerek oyunculara unutulmaz deneyimler yaşatmak."</div>
+        <div class="line"><span class="prompt">guest@ao-studio:~$</span> ./check_status.sh</div>
+        <div class="line output text-green">> Status: Aktif olarak yeni projeler ve prototipler üzerinde çalışıyor.</div>
+        <div class="line output text-cyan">> İletişim & İş Birliği: Açık</div>
+        <div class="line input-row">
+          <span class="prompt">guest@ao-studio:~$</span>
+          <span class="typed-text" id="interactive-prompt">help</span>
+          <span class="cursor">_</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="studio-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <div class="footer-brand">ALI ONUR INTERACTIVE</div>
+        <p>© 2026 Ali Onur. Tüm hakları saklıdır. GitHub Pages için tasarlanmıştır.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i> X / Twitter</a>
+        <a href="mailto:contact@example.com"><i class="fa-solid fa-envelope"></i> İletişim</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
