@@ -3,184 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAYSOFT // GAMING & INDIE STUDIO</title>
+  <title>MAYSOFT // FORMA: BLOK BULMACA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <div class="scanlines"></div>
-  <div class="vignette"></div>
-
-  <!-- Interactive Canvas Background -->
+  <!-- Clean Background -->
   <canvas id="cyber-canvas"></canvas>
 
-  <!-- Navigation Bar -->
+  <!-- Clean Header -->
   <header class="studio-header">
     <div class="logo-area">
       <div class="cyber-glitch-badge">MS</div>
       <div class="studio-name">
         <span class="studio-title">MAYSOFT</span>
-        <span class="studio-tag">INDIE GAME STUDIO</span>
+        <span class="studio-tag">OFFICIAL HOME</span>
       </div>
     </div>
     <nav class="nav-links">
-      <a href="#games" class="nav-item active"><i class="fa-solid fa-gamepad"></i> OYUNUMUZ</a>
-      <a href="#about" class="nav-item"><i class="fa-solid fa-user"></i> HAKKIMIZDA</a>
+      <a href="#forma" class="nav-item active"><i class="fa-solid fa-gamepad"></i> UYGULAMA</a>
+      <a href="#privacy" class="nav-item"><i class="fa-solid fa-shield-halved"></i> GİZLİLİK & ŞARTLAR</a>
       <a href="#contact" class="nav-item"><i class="fa-solid fa-envelope"></i> İLETİŞİM</a>
     </nav>
-    <div class="header-actions">
-      <a href="https://github.com/aydemircan35" target="_blank" id="gh-profile-btn" class="cyber-btn cyber-btn-sm">
-        <span>GITHUB PROFILI</span>
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-      </a>
-    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero-section">
+  <!-- Hero / App Main Section -->
+  <section id="forma" class="hero-section" style="padding: 4rem 2rem 2rem;">
     <div class="hero-status">
-      <span class="status-indicator"></span> MAYSOFT ONLINE // OFFICIAL LANDING
+      <span class="status-indicator"></span> MAYSOFT OFFICIAL APP PAGE
     </div>
-    <h1 class="hero-title glitch" data-text="MAYSOFT GAME STUDIO">MAYSOFT GAME STUDIO</h1>
-    <p class="hero-subtitle">
-      Bağımsız oyun geliştirme yaklaşımıyla eğlenceli, sürükleyici ve kaliteli mobil bulmaca deneyimleri tasarlıyoruz.
+    <h1 class="hero-title" style="font-size: 2.8rem; margin-bottom: 0.8rem;">FORMA: BLOK BULMACA</h1>
+    <p class="hero-subtitle" style="margin-bottom: 2rem; max-width: 750px;">
+      Forma, 8×8 tahtada oynanan bağımlılık yapıcı bir mobil blok bulmaca oyunudur. Stratejik hamleler yapın, satır ve sütunları temizleyip rekorunuzu kırın.
     </p>
 
-    <!-- Quick Stats HUD -->
-    <div class="hud-stats">
-      <div class="hud-card">
-        <div class="hud-val">FORMA</div>
-        <div class="hud-lbl">ANA PROJE</div>
-      </div>
-      <div class="hud-card">
-        <div class="hud-val">8×8 BLOK BULMACA</div>
-        <div class="hud-lbl">OYUN TÜRÜ</div>
-      </div>
-      <div class="hud-card">
-        <div class="hud-val"><span class="badge-pulse">●</span> YAYINDA</div>
-        <div class="hud-lbl">DURUM</div>
-      </div>
+    <!-- Main Feature Image -->
+    <div class="featured-banner-box" style="max-width: 900px; margin: 0 auto 2.5rem;">
+      <img src="images/feature-graphic-1024x500.png" alt="Forma: Blok Bulmaca" class="featured-img">
     </div>
 
-    <div class="hero-cta-group">
-      <a href="#games" class="cyber-btn cyber-btn-primary">
-        <span>FORMA'YI İNCELE</span>
-        <i class="fa-solid fa-chevron-right"></i>
-      </a>
-      <a href="mailto:maysoft.support@gmail.com" class="cyber-btn cyber-btn-secondary">
-        <span>İLETİŞİME GEÇ</span>
-        <i class="fa-solid fa-envelope"></i>
-      </a>
+    <!-- App Screenshots Showcase -->
+    <div class="games-grid" style="max-width: 900px; margin: 0 auto;">
+      <div class="game-card">
+        <div class="game-banner" style="background-image: url('images/01-home.png'); background-size: cover; background-position: center; height: 180px;"></div>
+        <div class="game-details" style="padding: 1rem;">
+          <h3 class="game-name" style="font-size: 1.1rem;">ŞIK ARABİRİM</h3>
+          <p class="game-desc" style="font-size: 0.85rem;">Modern tasarım ve renkli bloklar.</p>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <div class="game-banner" style="background-image: url('images/02-classic.png'); background-size: cover; background-position: center; height: 180px;"></div>
+        <div class="game-details" style="padding: 1rem;">
+          <h3 class="game-name" style="font-size: 1.1rem;">8×8 BULMACA TAHTASI</h3>
+          <p class="game-desc" style="font-size: 0.85rem;">Stratejik hamleler ve kombo puanları.</p>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <div class="game-banner" style="background-image: url('images/03-modes.png'); background-size: cover; background-position: center; height: 180px;"></div>
+        <div class="game-details" style="padding: 1rem;">
+          <h3 class="game-name" style="font-size: 1.1rem;">GÜÇLENDİRİCİLER</h3>
+          <p class="game-desc" style="font-size: 0.85rem;">Çekiç, Bomba ve Parça Yenileme.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Featured Game Showcase -->
-  <section id="games" class="section-container">
+  <!-- Legal & Policies Section -->
+  <section id="privacy" class="section-container" style="padding: 3rem 2rem;">
     <div class="section-header">
-      <div class="section-subtitle">// MAYSOFT AMİRAL GEMİSİ PROJESİ</div>
-      <h2 class="section-title">FORMA: BLOK BULMACA</h2>
-      <p class="section-intro">
-        Forma, 8×8 tahtada oynanan bağımlılık yapıcı bir mobil blok bulmaca oyunudur. Parçaları tahtaya yerleştirin, satır ve sütunları temizleyerek kendi rekorunuzu kırın.
-      </p>
+      <div class="section-subtitle">// YASAL BAĞLANTILAR</div>
+      <h2 class="section-title">GİZLİLİK VE POLİTİKALAR</h2>
     </div>
-
-    <!-- Featured Banner Image -->
-    <div class="featured-banner-box">
-      <img src="images/feature-graphic-1024x500.png" alt="Forma Feature Banner" class="featured-img">
-    </div>
-
-    <div class="games-grid" style="margin-top: 2rem;">
-      <!-- Feature Card 1 -->
-      <div class="game-card">
-        <div class="game-banner" style="background-image: url('images/01-home.png'); background-size: cover; background-position: center;">
-          <div class="badge-tag">ANA MENÜ & STİL</div>
-          <div class="engine-badge"><i class="fa-solid fa-mobile"></i> MOBILE</div>
-        </div>
-        <div class="game-details">
-          <h3 class="game-name">ŞIK VE MODERN TASARIM</h3>
-          <p class="game-desc">
-            Renkli blok parçaları, koyu tema ve akıcı arayüz ile gözü yormayan bulmaca keyfi.
-          </p>
-          <div class="game-tags">
-            <span>8×8 Tahta</span>
-            <span>Görsel Temalar</span>
-            <span>Özelleştirilebilir</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Feature Card 2 -->
-      <div class="game-card">
-        <div class="game-banner" style="background-image: url('images/02-classic.png'); background-size: cover; background-position: center;">
-          <div class="badge-tag">KLASİK & KOMBO</div>
-          <div class="engine-badge"><i class="fa-solid fa-brain"></i> PUZZLE</div>
-        </div>
-        <div class="game-details">
-          <h3 class="game-name">KLASİK MOD & KOMBOLAR</h3>
-          <p class="game-desc">
-            Hamlelerinizi stratejik planlayın, aynı anda birden fazla satırı temizleyerek yüksek kombo puanları toplayın.
-          </p>
-          <div class="game-tags">
-            <span>Klasik Mod</span>
-            <span>Kombo Puanları</span>
-            <span>Yüksek Skor</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Feature Card 3 -->
-      <div class="game-card">
-        <div class="game-banner" style="background-image: url('images/03-modes.png'); background-size: cover; background-position: center;">
-          <div class="badge-tag">MODLAR & GÜÇLENDİRİCİLER</div>
-          <div class="engine-badge"><i class="fa-solid fa-bolt"></i> POWER-UPS</div>
-        </div>
-        <div class="game-details">
-          <h3 class="game-name">MODLAR & ZORLU ENGELLER</h3>
-          <p class="game-desc">
-            Zen, Zamana Karşı ve Macera modları. Çekiç, Bomba ve Parça Yenileme gibi güçlendiricilerle tahtayı açın.
-          </p>
-          <div class="game-tags">
-            <span>Çekiç & Bomba</span>
-            <span>Zen & Zamana Karşı</span>
-            <span>Macera</span>
-          </div>
-        </div>
-      </div>
+    <div style="background: var(--bg-card); border: 1px solid var(--border-neon); padding: 1.5rem; border-radius: 6px; display: flex; gap: 1.5rem; flex-wrap: wrap;">
+      <a href="https://aydemircan35.github.io/game-policies/privacy-policy.html" target="_blank" class="cyber-btn cyber-btn-primary" style="flex: 1; text-align: center; justify-content: center;">
+        <i class="fa-solid fa-shield-halved"></i> Gizlilik Politikası (Privacy Policy)
+      </a>
+      <a href="https://aydemircan35.github.io/game-policies/dmca-terms.html" target="_blank" class="cyber-btn cyber-btn-secondary" style="flex: 1; text-align: center; justify-content: center;">
+        <i class="fa-solid fa-file-contract"></i> Hizmet Şartları (Terms of Service)
+      </a>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="section-container">
-    <div class="section-header">
-      <div class="section-subtitle">// STUDIO INSIGHTS</div>
-      <h2 class="section-title">MAYSOFT HAKKINDA</h2>
-    </div>
-
-    <div class="terminal-window">
-      <div class="terminal-bar">
-        <div class="terminal-dots">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-        </div>
-        <div class="terminal-title">maysoft-info --bash</div>
-      </div>
-      <div class="terminal-body" id="terminal-content">
-        <div class="line"><span class="prompt">guest@maysoft:~$</span> cat about.txt</div>
-        <div class="line output">MAYSOFT, bağımsız olarak mobil oyunlar geliştiren bireysel bir oyun girişimdir.</div>
-        <div class="line"><span class="prompt">guest@maysoft:~$</span> cat vision.txt</div>
-        <div class="line output">"Oyunculara sade, kaliteli ve zevkli bulmaca deneyimleri sunmak."</div>
-        <div class="line"><span class="prompt">guest@maysoft:~$</span> ./status.sh</div>
-        <div class="line output text-green">> Odak Proje: Forma: Blok Bulmaca</div>
-        <div class="line output text-cyan">> Destek E-Posta: maysoft.support@gmail.com</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
+  <!-- Clean Footer -->
   <footer class="studio-footer" id="contact">
     <div class="footer-content">
       <div class="footer-left">
@@ -188,8 +97,7 @@
         <p>© 2026 MAYSOFT. Tüm hakları saklıdır.</p>
       </div>
       <div class="footer-links">
-        <a href="mailto:maysoft.support@gmail.com"><i class="fa-solid fa-envelope"></i> maysoft.support@gmail.com</a>
-        <a href="https://github.com/aydemircan35" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="mailto:maysoft.support@gmail.com"><i class="fa-solid fa-envelope"></i> Geliştirici İletişim: maysoft.support@gmail.com</a>
       </div>
     </div>
   </footer>
