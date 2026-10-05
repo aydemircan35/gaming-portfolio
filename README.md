@@ -1,4 +1,4 @@
-# Ali Onur Interactive - Gaming Studio Portfolio
+# MAYSOFT Interactive - Oyun Stüdyosu Portföyü
 
 Bu repo, AAA / Bağımsız oyun stüdyosu tarzında modern bir portföy ve GitHub Pages vitrin sitesidir.
 
